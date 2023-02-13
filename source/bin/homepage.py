@@ -29,7 +29,7 @@ class Home_Page:
         button.click()
         time.sleep(5)
 
-    def on_fullscreen_mode(self):
+    def enable_fullscreen_mode(self):
         self.driver.maximize_window()
         time.sleep(1)
 
