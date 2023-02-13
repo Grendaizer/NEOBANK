@@ -31,7 +31,9 @@ class Home_Page:
 
     def on_fullscreen_mode(self):
         self.driver.maximize_window()
+        time.sleep(1)
 
     def check_text_on_page(self, checked_text):
+        time.sleep(1)
         source_text = self.driver.find_element(By.CSS_SELECTOR, self.TEXT)
         assert source_text.text == checked_text
