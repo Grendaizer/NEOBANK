@@ -20,7 +20,7 @@ class Home_Page:
 
     def enter_number(self, number: str):
         time.sleep(5)
-        replaced = number.replace('+38', '')
+        replaced = number.replace('+380', '')
         numinput = self.driver.find_element(By.XPATH, self.INPUTNUMBER)
         numinput.send_keys(replaced)
 
